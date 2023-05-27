@@ -4,11 +4,12 @@
 name: Node.js Package
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
       - 'package.json'
-      
+
 jobs:
   build:
     runs-on: ubuntu-latest
