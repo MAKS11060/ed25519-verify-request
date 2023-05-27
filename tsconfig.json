@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ESNext",
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "declarationDir": "./dist",
+    "declaration": true,
+    "outDir": "./dist",
+    "noEmitOnError": true
+  },
+  "files": [
+    "src/verify.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

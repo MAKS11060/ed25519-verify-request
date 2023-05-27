@@ -1,0 +1,20 @@
+{
+  "name": "ed25519-verify-request",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "exports": "./dist/verify.js",
+  "types": "./dist/vefiry.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --loader=ts-node/esm --test src/verify.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
