@@ -8,9 +8,10 @@
   "author": "MAKS11060",
   "description": "Verify request with Ed25519 signature",
   "keywords": [
-    "webcrypto",
-    "ed25519",
-    "verify"
+    "Ed25519",
+    "verify",
+    "crypto",
+    "webcrypto"
   ],
   "repository": "git@github.com/maks11060/ed25519-verify-request.git",
   "files": [
