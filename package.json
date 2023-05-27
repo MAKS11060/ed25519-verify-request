@@ -1,13 +1,24 @@
 {
   "name": "ed25519-verify-request",
   "type": "module",
-  "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "exports": "./dist/verify.js",
   "types": "./dist/vefiry.d.ts",
+  "license": "MIT",
+  "author": "MAKS11060",
+  "description": "Verify request with Ed25519 signature",
+  "keywords": [
+    "webcrypto",
+    "ed25519",
+    "verify"
+  ],
+  "repository": "git@github.com/maks11060/ed25519-verify-request.git",
   "files": [
     "dist/*"
   ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "tsc",
     "test": "node --loader=ts-node/esm --test src/verify.test.ts"
@@ -16,5 +27,6 @@
     "@types/node": "^20.2.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
-  }
+  },
+  "packageManager": "pnpm@8.1.0"
 }
