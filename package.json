@@ -1,7 +1,7 @@
 {
   "name": "@maks11060/ed25519-verify-request",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "exports": "./dist/verify.js",
   "types": "./dist/verify.d.ts",
   "license": "MIT",
