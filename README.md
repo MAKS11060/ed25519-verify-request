@@ -4,7 +4,7 @@
 
 ## Usage
 ```ts
-import {verify, getCryptoKey} from 'ed25519-verify-request'
+import {verify, getCryptoKey} from '@maks11060/ed25519-verify-request'
 
 const publicKey = env['PUBLIC_KEY']
 const cryptoKey = await getCryptoKey(publicKey) 
@@ -13,9 +13,10 @@ if (await verify(request, cryptoKey)) {
   return new Response('Verify')
 }
 ```
+
 ## Example
 ```ts
-import {verify, getCryptoKey} from 'ed25519-verify-request'
+import {verify, getCryptoKey} from '@maks11060/ed25519-verify-request'
 
 const request = new Request(new URL('https://localhost.com'), {
   method: 'POST',
