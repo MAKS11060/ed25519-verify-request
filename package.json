@@ -1,5 +1,5 @@
 {
-  "name": "ed25519-verify-request",
+  "name": "@maks11060/ed25519-verify-request",
   "type": "module",
   "version": "0.0.3",
   "exports": "./dist/verify.js",
