@@ -6,7 +6,7 @@
   "types": "./dist/vefiry.d.ts",
   "license": "MIT",
   "author": "MAKS11060",
-  "description": "Verify request with Ed25519 signature",
+  "description": "Request validation using the Ed25519 algorithm",
   "keywords": [
     "Ed25519",
     "verify",
