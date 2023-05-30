@@ -2,12 +2,23 @@
 
 [Request] validation using the Ed25519 algorithm.
 
+## Install
+
+```shell
+npm install @maks11060/ed25519-verify-request
+```
+
+```shell
+pnpm add @maks11060/ed25519-verify-request
+```
+
 ## Usage
+
 ```ts
 import {verify, getCryptoKey} from '@maks11060/ed25519-verify-request'
 
 const publicKey = env['PUBLIC_KEY']
-const cryptoKey = await getCryptoKey(publicKey) 
+const cryptoKey = await getCryptoKey(publicKey)
 
 if (await verify(request, cryptoKey)) {
   return new Response('Verify')
@@ -15,6 +26,7 @@ if (await verify(request, cryptoKey)) {
 ```
 
 ## Example
+
 ```ts
 import {verify, getCryptoKey} from '@maks11060/ed25519-verify-request'
 
@@ -39,6 +51,6 @@ await verify(request, cryptoKey) // true
 
 * `verify(request, key)` return **Boolean**
 
-
 [Request]: https://developer.mozilla.org/ru/docs/Web/API/Request
+
 [CryptoKey]: https://developer.mozilla.org/en-US/docs/Web/API/CryptoKey
